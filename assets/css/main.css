@@ -482,7 +482,7 @@ body.is-loading #banner .inner {
 	color: rgba(255, 255, 255, 0.75);
 	line-height: 1.1;
 	text-shadow: -2px -2px 0 rgba(0, 0, 0, 0.125);
-	text-transform: none;
+    text-transform: none;
 }
 
 @media screen and (max-width: 1280px) {
@@ -516,7 +516,7 @@ body.is-loading #banner .inner {
 }
 
 
-/* more button */
+/* more button for banner */
 
 @-moz-keyframes more {
 	0% {
@@ -620,18 +620,6 @@ body.is-loading #banner .inner {
 		display: none;
 	}
 } */
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /* post */
@@ -765,6 +753,9 @@ body.is-loading .post:before {
     opacity: 1;
 }
 
+
+/* more button for post */
+
 .post .more {
     /* Position */
     position: absolute;
@@ -832,9 +823,9 @@ body.is-loading .post:before {
 }
 
 @media screen and (max-width: 480px) {
-    .post .more {
+    /* .post .more {
         display: none;
-    }
+    } */
     .post .button {
         width: 100%;
     }
@@ -843,10 +834,6 @@ body.is-loading .post:before {
 .post .box {
     margin: 0;
 }
-
-
-/* ================================================================= */
-
 
 
 /* Box */
@@ -880,30 +867,57 @@ body.is-loading .post:before {
     padding: 0;
 }
 
-@media screen and (max-width: 980px) {
+/*
+@media screen and (max-width: 1280px) {
+}
+
+@media screen and (max-width: 1080px) {
+}
+
+@media screen and (max-width: 720px) {
+}
+
+@media screen and (max-width: 480px) {
+}
+
+@media screen and (max-width: 360px) {
+}
+*/
+
+@media screen and (max-width: 1280px) {
     .box {
-        padding: 3em;
+        padding: 3.5em;
+        font-size: 1em;
     }
 }
 
-@media screen and (max-width: 736px) {
+@media screen and (max-width: 1080px) {
     .box {
-        padding: 2em;
+        /* padding: 2.5em; */
+        font-size: .9em;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .box {
+        padding: 3em;
+        /* font-size: 1em; */
     }
 }
 
 @media screen and (max-width: 480px) {
     .box {
         padding: 1em;
+        font-size: .8em;
     }
 }
 
-
-
-
-
-
-
+@media screen and (max-width: 360px) {
+    .box {
+        /* padding: 1em;
+        font-size: 1em; */
+    }
+}
 
 
 /* Button  */
@@ -928,6 +942,8 @@ button,
     -ms-appearance: none;
     appearance: none;
     cursor: pointer;
+    background-color: #5a5a5a;
+    color: #ffffff !important;
 
     /* Content Position */
     line-height: 2.95em;
@@ -946,6 +962,17 @@ button,
     transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 }
 
+@media screen and (max-width: 480px) {
+    input[type="submit"],
+    input[type="reset"],
+    input[type="button"],
+    button,
+    .button {
+        padding: 0;
+    }
+}
+
+/*
 input[type="submit"].icon,
 input[type="reset"].icon,
 input[type="button"].icon,
@@ -987,6 +1014,23 @@ button.big,
 .button.big {
     font-size: 1.35em;
 }
+*/
+
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+input[type="button"]:hover,
+button:hover,
+.button:hover {
+    background-color: #676767;
+}
+
+input[type="submit"]:active,
+input[type="reset"]:active,
+input[type="button"]:active,
+button:active,
+.button:active {
+    background-color: #4d4d4d;
+}
 
 input[type="submit"].disabled,
 input[type="submit"]:disabled,
@@ -1005,40 +1049,6 @@ button:disabled,
     opacity: 0.25;
 }
 
-@media screen and (max-width: 480px) {
-    input[type="submit"],
-    input[type="reset"],
-    input[type="button"],
-    button,
-    .button {
-        padding: 0;
-    }
-}
-
-input[type="submit"],
-input[type="reset"],
-input[type="button"],
-button,
-.button {
-    background-color: #5a5a5a;
-    color: #ffffff !important;
-}
-
-input[type="submit"]:hover,
-input[type="reset"]:hover,
-input[type="button"]:hover,
-button:hover,
-.button:hover {
-    background-color: #676767;
-}
-
-input[type="submit"]:active,
-input[type="reset"]:active,
-input[type="button"]:active,
-button:active,
-.button:active {
-    background-color: #4d4d4d;
-}
 
 input[type="submit"].alt,
 input[type="reset"].alt,
@@ -1065,7 +1075,7 @@ button.alt:active,
 .button.alt:active {
     background-color: rgba(144, 144, 144, 0.2);
 }
-
+/* 
 input[type="submit"].alt.icon:before,
 input[type="reset"].alt.icon:before,
 input[type="button"].alt.icon:before,
@@ -1097,22 +1107,78 @@ input[type="button"].special:active,
 button.special:active,
 .button.special:active {
     background-color: #f52f2f;
-}
+} */
 
 
 /* Footer */
 
 #footer {
+    /* Position */
+    position: relative;
+
+    /* Size */
+    height: 100vh;
+    min-height: 100vh;
+    overflow: hidden;
+
+    /* Content Position */
     padding: 6em 0 4em 0;
-    color: #ffffff;
+
+    /* Content */
+    color: #fff;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+@media screen and (max-width: 736px) {
+    #footer {
+        padding: 3em 0 1em 0;
+    }
 }
 
 #footer .inner {
+    /* Position */
     margin: 0 auto;
-    padding: 3em 2em 1em;
-    border-radius: 1em;
+
+    /* Content */
     background-color: rgba(0, 0, 0, 0.75);
+    border-radius: 1em;
+
+    /* Content Position */
+    padding: 2em;
 }
+
+#footer h2 {
+    margin: 1em;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 #footer label {
     color: #ffffff;
@@ -1160,20 +1226,16 @@ button.special:active,
     border-top-color: rgba(255, 255, 255, 0.25);
 }
 
-#footer h2 {
-    margin-bottom: 2em;
-    text-align: center;
-}
 
 #footer .icons {
     text-align: center;
-    padding-top: 1em;
+    /* padding-top: 1em; */
 }
 
 #footer .copyright {
     color: rgba(255, 255, 255, 0.5);
     font-size: 0.8em;
-    margin: 0 0 2em 0;
+    margin: 0 0 1em 0;
     padding: 0;
     text-align: center;
 }
@@ -1194,21 +1256,15 @@ button.special:active,
     box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.25);
 }
 
-@media screen and (max-width: 736px) {
-    #footer {
-        padding: 3em 0 1em 0;
-    }
-}
-
 
 /* Form */
 
 form {
-    margin: 0 0 2em 0;
+    margin: 0 0 1em 0;
 }
 
 form .field {
-    margin-bottom: 1.5em;
+    margin-bottom: 1em;
 }
 
 form .field.half {
@@ -1305,7 +1361,7 @@ input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focu
 
 ul {
     list-style: disc;
-    margin: 0 0 2em 0;
+    margin: 0 0 1em 0;
     padding-left: 1em;
 }
 
