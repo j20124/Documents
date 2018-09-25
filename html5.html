@@ -3,9 +3,30 @@
     <head>
         <title>HTML5 by j20124</title>
         <meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="assets/css/content.css" />
+        <script>
+            function urlLocation(url) {
+                var elements = document.querySelector("iframe");
+                elements.src=url;
+            }
+        </script>
     </head>
     <body>
-        <h1>HTML5</h1>
+        <header>
+            <h1>HTML5</h1>
+        </header>
+        <div id="sidebar">
+            <ul>
+                <li><a href="javascript:void(0);" onclick="urlLocation('html/01_Basic_Of_HTML.html')">01_Basic_Of_HTML</a></li>
+                <li></li><a href="javascript:void(0);" onclick="urlLocation('#')">a</a></li>
+                <li></li><a href="javascript:void(0);" onclick="urlLocation('#')">a</a></li>
+            </ul>
+        </div>
+        <section>
+            <iframe></iframe>
+        </section>
+        <footer>
+        </footer>
     </body>
 </html>

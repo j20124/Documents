@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <title>01 Basic Of HTML</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../assets/css/markup.css" />
+</head>
+
+<body>
+    <h1>1장 HTML의 기본</h1>
+    <h2>1.1 HTML이란?</h2>
+    <ul>
+        <li>HyperText Markup Language</li>
+        <li>쉽게 말해 웹에서 자유롭게 오갈 수 있는 웹 문서이다.</li>
+        <li>팀 버너스리에 의해 만들어진다.</li>
+    </ul>
+    <h2>1.2 팀 버너스 리</h2>
+    <ul>
+        <li>웹 창시자</li>
+        <li>W3C(World Wide Web Consortium) 설립</li>
+    </ul>
+    <h2>1.3 Markup 이란?</h2>
+    <ul>
+        <li>태그를 사용해 문서에서 어느 부분이 제목이고 본문인지, 어느 부분이 사진이고 링크인지 표시하는 것</li>
+    </ul>
+    <h2>1.4 웹 브라우저의 종류</h2>
+    <ul>
+        <li>chrome(google)</li>
+        <li>mozila(firefox)</li>
+        <li>Internet explorer(MS)</li>
+        <li>Edge(MS)</li>
+    </ul>
+    <h2>1.5 HTML에서 사용되는 기본 태그</h2>
+    <h3>1.5.1 DOCTYPE 태그</h3>
+    <ul>
+        <li>HTML문서의 가장 첫 줄에 쓰여진다.</li>
+        <li>현재 문서가 HTML언어로 작성된 웹 문서라는 뜻이다.</li>
+        <li>다음과 같이 작성한다.</li>
+    </ul>
+    <pre>
+        <code class="language-html"><span class="hljs-doctype">&lt;!DOCTYPE html&gt;</span>
+</code></pre>
+    <h3>1.5.2 html 태그</h3>
+    <ul>
+        <li>웹 문서의 시작과 끝을 나타내는 태그이다.</li>
+        <li>lang이라는 속성을 사용해 문서에서 사용할 언어를 지정할 수 있다. (국가별 언어코드 사용)</li>
+        <li>언어를 지정하는 이유는 검색이나 화면낭독기에서 해당언어를 참조할 수 있다.</li>
+        <li>다음과 같이 작성한다.</li>
+    </ul>
+    <pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-title">html</span> <span class="hljs-attribute">lang</span>=<span class="hljs-value">"ko"</span>&gt;</span> 
+
+<span class="hljs-tag">&lt;/<span class="hljs-title">html</span>&gt;</span>
+</code></pre>
+    <h3>1.5.3 head 태그</h3>
+    <ul>
+        <li>웹 브라우저가 웹 문서를 해석하기 위해 필요한 정보들을 입력하는 부분이다.</li>
+        <li>title 태그를 사용해 문서제목을 브라우저 창에 표시할 수 있다. (즐겨찾기로 추가할 때도 동일)</li>
+        <li>style태그와 link 태그 등이 사용되는 곳이다.</li>
+        <li>meta 태그를 이용해 문자 인코딩 및 문서 키워드를 지정하고, 간단한 설명에 대해 지정가능하다.</li>
+    </ul>
+    <pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-title">head</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">title</span>&gt;</span>여기에 title을 적는다.<span class="hljs-tag">&lt;/<span class="hljs-title">title</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">meta</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">"description"</span> <span class="hljs-attribute">content</span>=<span class="hljs-value">"여기에 사이트에 대한 짧은 설명을 입력한다"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">style</span>&gt;</span><span class="css"> ... </span><span class="hljs-tag">&lt;/<span class="hljs-title">style</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">link</span>&gt;</span> ... <span class="hljs-tag">&lt;/<span class="hljs-title">link</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">head</span>&gt;</span>
+</code></pre>
+    <h3>1.5.4 body 태그</h3>
+    <ul>
+        <li>실제로 웹 브라우저 화면에 나타낼 내용을 입력한다.</li>
+    </ul>
+</body>
+
+</html>
