@@ -1,11 +1,14 @@
+/*
+ * Copyright(C) 2018 Hunsup Jung All Right Reserved
+ */
+
 /* Reset */
 
 html, body, div, span, article,
 header, section, footer, nav,
 h1, h2, h3, h4, h5, h6,
 p, img, strong, b, u, i,
-dl, dt, dd, ol, ul, li,
-iframe, form, input, label, caption, table, tr, th, td,
+iframe, form, input, label, caption,
 figure, figcaption {
     margin: 0;
 	padding: 0;
@@ -28,20 +31,12 @@ figure, figcaption {
 /* Basic */
 
 body {
-    /* Size */
-    height: 100vh;
-
-    /* Content Position */
-    padding: 1em;
-
-    /* Content */
     background-color: #fff;
     color: #000;
 }
 
 @media screen and (max-width: 480px) {
     html, body {
-        font-size: 10px;
         min-width: 320px;
     }
 }
@@ -60,35 +55,36 @@ body.is-loading *, body.is-loading *:before, body.is-loading *:after {
 h1, h2, h3, h4, h5, h6 {
     font-weight: 600;
     line-height: 1.5em;
-    text-transform: uppercase;
 }
 
 h1 {
-    font-size: 2.25rem;
+    /* Default 2em */
+    font-size: 2.2rem;
 }
 
 h2 {
-    font-size: 1.75rem;
+    /* Default 1.5em */
+    font-size: 1.7rem;
 }
 
 h3 {
-    font-size: 1.35rem;
+    /* Default 1.17em */
+    font-size: 1.3rem;
 }
 
 h4 {
+    /* Default 1em */
     font-size: 1.1rem;
 }
 
 h5 {
+    /* Default 0.83em */
     font-size: .9rem;
 }
 
 h6 {
+    /* Default 0.67em */
     font-size: .7rem;
-}
-
-p {
-    margin: 0 0 2em 0;
 }
 
 a {
@@ -103,20 +99,29 @@ a:hover {
 
 /* Body */
 
+body {
+    /* Size */
+    height: 100vh;
+
+    /* Content Position */
+    padding: 1em;
+}
+
 @media screen and (max-width: 480px) {
     html, body {
+        font-size: 10px;
         min-width: 0;
     }
 }
 
 /* List */
-
+/* 
 ul {
     margin: 0 0 1rem 3rem;
 }
 
 li {
-    line-height: 1.5em;
+    line-height: 1.5em; */
 }
 
 
@@ -137,6 +142,31 @@ code {
     overflow-x: scroll;
 
     /* Content */
+    font-size: 1rem;
+    background-color: #ddd;
+    border-radius: 4px;
+
+    /* Content Position */
+    padding: 1em;
+    line-height: 1.5em;
+}
+
+
+/* Result */
+
+.result {
+    /* Position */
+    display: block;
+    margin: 1em;
+
+    /* Size */
+    width: 100%;
+    max-width: 1000px;
+    min-width: 0;
+    overflow-x: scroll;
+
+    /* Content */
+    font-size: 1rem;
     background-color: #ddd;
     border-radius: 4px;
 

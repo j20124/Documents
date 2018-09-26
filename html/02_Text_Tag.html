@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <title>01 Basic Of HTML</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../assets/css/markup.css" />
+</head>
+
+<body>
+    <h1>2장 텍스트 관련 태그</h1>
+    <h2>2.1 h태그</h2>
+    <ul>
+        <li>강조를 주고 싶은 글에 사용하며, 보통 제목을 쓸 때 사용한다.</li>
+        <li>h1 부터 h6까지 사용가능하고 숫자가 작을 수록 글씨가 커진다.</li>
+        <li>h태그는 block 요소이다.</li>
+        <li>기본적으로 margin값이 설정되어 있다.</li>
+        <li>폰트 크기는 2em, 1.5em, 1.17em, 1em, 0.83em, 0.67em 으로 되어 있다. (2018.09.26확인)</li>
+    </ul>
+    <pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-title">h1</span>&gt;</span> 제목 <span class="hljs-tag">&lt;/<span class="hljs-title">h1</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">h2</span>&gt;</span> 제목 <span class="hljs-tag">&lt;/<span class="hljs-title">h2</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">h3</span>&gt;</span> 제목 <span class="hljs-tag">&lt;/<span class="hljs-title">h3</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">h4</span>&gt;</span> 제목 <span class="hljs-tag">&lt;/<span class="hljs-title">h4</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">h5</span>&gt;</span> 제목 <span class="hljs-tag">&lt;/<span class="hljs-title">h5</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">h6</span>&gt;</span> 제목 <span class="hljs-tag">&lt;/<span class="hljs-title">h6</span>&gt;</span>
+</code></pre>
+    <div class="result">
+        <h1> 제목 </h1>
+        <h2> 제목 </h2>
+        <h3> 제목 </h3>
+        <h4> 제목 </h4>
+        <h5> 제목 </h5>
+        <h6> 제목 </h6>
+    </div>
+    <h2>2.2 p태그</h2>
+    <ul>
+        <li>문단 입력 태그이다.</li>
+        <li>p태그는 block 요소이다.</li>
+        <li>기본적으로 margin값이 설정되어 있다.</li>
+    </ul>
+    <pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>텍스트<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+</code></pre>
+    <div class="result">
+        <p>텍스트</p>
+    </div>
+    <h2>2.3 span태그</h2>
+    <ul>
+        <li>줄바꿈 없이 영역을 묶을 때 사용한다.</li>
+        <li>span 태그는 inline 요소이다.</li>
+    </ul>
+    <pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-title">span</span>&gt;</span>내용<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+</code></pre>
+    <div class="result">
+        <span>내용</span>
+    </div>
+    <h2>2.4 br태그</h2>
+    <ul>
+        <li>줄 바꾸기 태그이다.</li>
+        <li>다음과 같이 사용한다.</li>
+        <li>닫는 태그가 없다.</li>
+    </ul>
+    <pre><code class="language-html">텍스트<span class="hljs-tag">&lt;<span class="hljs-title">br</span>&gt;</span>다음텍스트
+</code></pre>
+    <div class="result">
+        텍스트<br>다음텍스트
+    </div>
+    <h2>2.5 hr태그</h2>
+    <ul>
+        <li>수평 줄을 넣을 때 사용하는 태그이다.</li>
+        <li>p태그는 block 요소이다.</li>
+        <li>닫는 태그가 없다.</li>
+    </ul>
+    <pre><code class="language-html">이 글 밑에 수평줄<span class="hljs-tag">&lt;<span class="hljs-title">hr</span>&gt;</span>
+</code></pre>
+    <div class="result">
+        이 글 밑에 수평줄<hr>
+    </div>
+    <h2>2.6 bloackqoute태그와 q태그</h2>
+    <ul>
+        <li>인용글을 넣을 때 사용하는 태그이다.</li>
+        <li>자동으로 줄바꿈과 들여쓰기가 된다.</li>
+        <li>q 태그를 사용해서 인용글을 넣을 수도 있는데, q 태그는 줄바꿈이 없고 따옴표가 입력이 된다.</li>
+    </ul>
+    <pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-title">blockquote</span>&gt;</span>인용 내용<span class="hljs-tag">&lt;/<span class="hljs-title">blockquote</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">q</span>&gt;</span>인용 내용<span class="hljs-tag">&lt;/<span class="hljs-title">q</span>&gt;</span>
+</code></pre>
+    <div class="result">
+        <blockquote>인용 내용</blockquote>
+        <q>인용 내용</q>
+    </div>
+    <h2>2.7 pre태그</h2>
+    <ul>
+        <li>입력한 그대로 화면에 표시하고 싶을 때 사용한다.</li>
+        <li>pre 태그를 사용하면 스크린리더기에서 해당 부분을 skip한다.</li>
+    </ul>
+    <pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-title">pre</span>&gt;</span>텍스트<span class="hljs-tag">&lt;/<span class="hljs-title">pre</span>&gt;</span>
+</code></pre>
+    <div class="result">
+        <pre>텍스트</pre>
+    </div>
+    <h2>2.8 code태그</h2>
+    <ul>
+        <li>소스코드를 넣을 때 사용한다.</li>
+        <li>보통 pre태그와 함께 사용한다.</li>
+    </ul>
+    <pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-title">pre</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">code</span>&gt;</span> function test() {...}
+<span class="hljs-tag">&lt;/<span class="hljs-title">code</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">pre</span>&gt;</span>
+</code></pre>
+    <pre><code> function test() {...}
+    </code></pre>
+    <h2>2.9 strong태그와 b태그</h2>
+    <ul>
+        <li>글씨를 굵게 표시할 때 사용한다.</li>
+        <li>strong태그와 b태그는 inline요소이다.</li>
+        <li>두 태그는 화면상으로 동일하게 표현되지만, strong 태그로 표기할 경우 스크린리더기에서 강조 텍스트로 구분해준다.</li>
+    </ul>
+    <pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-title">strong</span>&gt;</span>굵게 강조할 텍스트<span class="hljs-tag">&lt;/<span class="hljs-title">strong</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">b</span>&gt;</span>굵게 강조할 텍스트<span class="hljs-tag">&lt;/<span class="hljs-title">b</span>&gt;</span>
+</code></pre>
+    <div class="result">
+        <strong> 굵게 강조할 텍스트 </strong>
+        <b> 굵게 강조할 텍스트 </b>
+    </div>
+    <h2>2.10 em태그와 i태그</h2>
+    <ul>
+        <li>이탤릭체로 표시할 때 사용한다.</li>
+        <li>em태그와 i태그는 inline요소이다.</li>
+        <li>strong 태그와 동일하게 em 태그를 사용하면 스크린리더기에서 강조 텍스트로 구분해준다.</li>
+    </ul>
+    <pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-title">em</span>&gt;</span>이탤릭체<span class="hljs-tag">&lt;/<span class="hljs-title">em</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">i</span>&gt;</span>이탤릭체<span class="hljs-tag">&lt;/<span class="hljs-title">i</span>&gt;</span>
+</code></pre>
+    <div class="result">
+        <em>이탤릭체</em>
+        <i>이탤릭체</i>
+    </div>
+    <h2>2.11 s태그</h2>
+    <ul>
+        <li>취소선을 넣을 때 사용한다.</li>
+    </ul>
+    <pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-title">s</span>&gt;</span>취소선<span class="hljs-tag">&lt;/<span class="hljs-title">s</span>&gt;</span>
+</code></pre>
+    <div class="result">
+        <s>취소선</s>
+    </div>
+    <h2>2.12 u태그</h2>
+    <ul>
+        <li>밑줄을 넣을 때 사용한다.</li>
+    </ul>
+    <pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-title">u</span>&gt;</span>밑줄<span class="hljs-tag">&lt;/<span class="hljs-title">u</span>&gt;</span>
+</code></pre>
+    <div class="result">
+        <u>밑줄</u>
+    </div>
+    <h2>2.13 small태그</h2>
+    <ul>
+        <li>글자를 작게 표시할 때 사용한다.</li>
+    </ul>
+    <pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>내용<span class="hljs-tag">&lt;<span class="hljs-title">small</span>&gt;</span>(첨부확인)<span class="hljs-tag">&lt;/<span class="hljs-title">small</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+</code></pre>
+    <div class="result">
+        <p>내용<small>(첨부확인)</small></p>
+    </div>
+    <h2>2.14 mark 태그</h2>
+    <ul>
+        <li>형광펜 효과를 낼 때 사용한다.</li>
+    </ul>
+    <pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-title">mark</span>&gt;</span>텍스트<span class="hljs-tag">&lt;/<span class="hljs-title">mark</span>&gt;</span>
+</code></pre>
+    <div class="result">
+        <mark>텍스트</mark>
+    </div>
+    <h2>2.15 ruby 태그</h2>
+    <ul>
+        <li>동아시아 국가들의 글자를 표시할 때 사용한다.</li>
+        <li>주석으로 표시할 내용을 <ruby> 태그 안에서 <rt> 태그로 표시한다.</rt></ruby></li>
+    </ul>
+    <pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-title">ruby</span>&gt;</span>내용<span class="hljs-tag">&lt;<span class="hljs-title">rt</span>&gt;</span>주석<span class="hljs-tag">&lt;/<span class="hljs-title">rt</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">ruby</span>&gt;</span>
+</code></pre>
+    <div class="result">
+        <ruby>내용<rt>주석</rt></ruby>
+    </div>
+    <h2>2.16 sub태그와 sup태그</h2>
+    <ul>
+        <li>아래 첨자와 위 첨자를 넣을 때 사용한다.</li>
+    </ul>
+    <pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>log<span class="hljs-tag">&lt;<span class="hljs-title">sub</span>&gt;</span>2<span class="hljs-tag">&lt;/<span class="hljs-title">sub</span>&gt;</span>10<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>2<span class="hljs-tag">&lt;<span class="hljs-title">sup</span>&gt;</span>10<span class="hljs-tag">&lt;/<span class="hljs-title">sup</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+</code></pre>
+    <div class="result">
+        <p>log<sub>2</sub>10</p>
+        <p>2<sup>10</sup></p>
+    </div>
+    <h2>2.17 cite 태그</h2>
+    <ul>
+        <li>refer를 표시할 때 사용한다.</li>
+    </ul>
+    <pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>
+    내용
+    <span class="hljs-tag">&lt;<span class="hljs-title">cite</span>&gt;</span>'어디어디' <span class="hljs-tag">&lt;/<span class="hljs-title">cite</span>&gt;</span> 중
+<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+</code></pre>
+    <div class="result">
+        <p>
+            내용
+            <cite>'어디어디' </cite> 중
+        </p>
+    </div>
+    <h2>2.18 abbr 태그</h2>
+    <ul>
+        <li>약자를 표시할 때 사용한다.</li>
+    </ul>
+    <pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">abbr</span> <span class="hljs-attribute">title</span>=<span class="hljs-value">"약자풀이"</span>&gt;</span>약자<span class="hljs-tag">&lt;/<span class="hljs-title">abbr</span>&gt;</span>
+    약자에 대한 설명
+<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+</code></pre>
+    <div class="result">
+        <p>
+            <abbr title="약자풀이">약자</abbr>
+            약자에 대한 설명
+         </p>
+    </div>
+
+</body>
+
+</html>
